@@ -12,3 +12,4 @@ Thumbs.db
 artisan
 phpunit.xml
 composer.json
+server.php
