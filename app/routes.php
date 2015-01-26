@@ -18,3 +18,5 @@ Route::get('/', function()
 
 Route::resource ('patient','PatientController');
 
+Route::resource ('consultation','ConsultationController');
+
