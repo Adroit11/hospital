@@ -1,0 +1,152 @@
+.index-title {
+    font-size:32px;
+    font-weight: bold;
+}
+
+.form-bg {
+    background-color: skyblue;
+    box-shadow: 0px 5px 10px;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+
+.form-title{
+    font-size:32px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.form-report {
+    padding-bottom: 10px;
+}
+
+.menu-bg {
+    background-color: skyblue;
+    padding: 5px;
+    border-radius: 5px;
+}
+.menu-title {
+    font-size: 16px;
+}
+
+.table-bg{
+    box-shadow: 0px 5px 10px;
+}
+
+thead{
+    font-size: 16px;
+    font-weight: bold;
+    background-color: deepskyblue;
+}
+
+.bg{
+    background-color: skyblue;
+}
+
+.form-signup, .form-signin {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.navbar-static-top {
+  margin-bottom:20px;
+}
+
+.navbar-inverse{
+    background-color: skyblue;
+    border-color: #ffffff;
+}
+
+.navbar-inverse .navbar-brand{
+    color: #000000;
+}
+
+i {
+  font-size:16px;
+}
+
+.nav > li > a {
+  color:#787878;
+}
+  
+footer {
+  margin-top:20px;
+  padding-top:20px;
+  padding-bottom:20px;
+  background-color:#efefef;
+}
+
+/* count indicator near icons */
+.nav>li .count {
+  position: absolute;
+  bottom: 12px;
+  right: 6px;
+  font-size: 9px;
+  background: rgba(51,200,51,0.55);
+  color: rgba(255,255,255,0.9);
+  line-height: 1em;
+  padding: 2px 4px;
+}
+
+/* indent 2nd level */
+.list-unstyled li > ul > li {
+   margin-left:10px;
+   padding:8px;
+}
+
+.report-hdiv {
+    padding: 15px;
+}
+
+.report-header {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.report-header tbody tr td, .report-header thead tr th {
+    border: none;
+    padding: 0px;
+}
+
+.report-h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.report-h3 {
+    font-size: 16px;
+}
+
+.dash-title {
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.dash-img {
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dash-panel {
+    text-align: center;
+    font-size: 16px;
+}
+
+.dash-bg {
+    background-color: #f5f5f5;
+    box-shadow: 0px 5px 10px;
+    padding: 20px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+.menu-left {
+    font-size: 16px;
+}
