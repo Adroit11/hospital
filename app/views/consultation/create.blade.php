@@ -70,4 +70,4 @@
     {{ Form::close() }}
 </div>
 
-@stop/
+@stop
