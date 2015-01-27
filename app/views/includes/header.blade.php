@@ -6,7 +6,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">TPA  OFFICE FURNITURE AND EQUIPMENTS INVENTORY SYSTEM</a>
+        <a class="navbar-brand" href="#">HOSPITAL MANAGEMENT SYSTEM</a>
     </div>
     <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
