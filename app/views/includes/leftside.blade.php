@@ -8,9 +8,9 @@
             <p>Asset Feature <i class="glyphicon glyphicon-chevron-right"></i></p>
         </div>
         <ul class="nav nav-pills nav-stacked collapse in" id="feature">
-            <li><a href="{{ URL::asset('forms/assets') }}"><span class="glyphicon glyphicon-th-large"></span> Assets </a></li>
-            <li ><a href="{{ URL::asset('forms/assets/editor') }}"><i class="glyphicon glyphicon-th-large"></i> Editor </a></li>
-            <li><a href="{{ URL::asset('reports') }}"><i class="glyphicon glyphicon-th-large"></i> Reports </a></li>
+            <li><a href="{{ URL::asset('patient/create') }}"><span class="glyphicon glyphicon-th-large"></span> Patient </a></li>
+            <li ><a href="{{ URL::asset('consultation/create') }}"><i class="glyphicon glyphicon-th-large"></i> Consaltation </a></li>
+            <li><a href="{{ URL::asset('payment/create') }}"><i class="glyphicon glyphicon-th-large"></i> Payment </a></li>
         </ul>
     </li>
 </ul>

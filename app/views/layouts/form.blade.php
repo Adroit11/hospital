@@ -12,7 +12,7 @@
     <!-- Left Side-->
     <div class="row">
         <div class="col-sm-2 print-hide">
-            <!--include left menu space-->
+            @include('includes.leftside')
         </div>
             <div class="col-md-8">
                <!-- column 2 -->

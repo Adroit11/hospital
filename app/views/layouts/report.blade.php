@@ -12,7 +12,7 @@
     <!-- Left Side-->
     <div class="row">
         <div class="col-md-2 print-hide">
-            <!--include left side menu-->
+            @include('includes.leftside')
         </div>
         <!-- /col-3 -->
         <div class="col-md-8">
