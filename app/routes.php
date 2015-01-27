@@ -20,3 +20,5 @@ Route::resource ('patient','PatientController');
 
 Route::resource ('consultation','ConsultationController');
 
+Route::resource ('payment','PaymentController');
+

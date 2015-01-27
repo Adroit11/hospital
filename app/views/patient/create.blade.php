@@ -10,7 +10,7 @@
 </ul>
 <div class="form-bg">
     <div class="form-title">REGISTER PATIENT</div>
-{{ Form::open(array('url'=>'patient', 'class'=>'form-horizontal','role'=>'form')) }}
+{{ Form::open(array('url'=>'payment', 'class'=>'form-horizontal','role'=>'form')) }}
 
     <!-- Patient name-->
     <div class="form-group">
