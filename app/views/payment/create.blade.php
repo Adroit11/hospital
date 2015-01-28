@@ -9,30 +9,30 @@
     @endforeach
 </ul>
 <div class="form-bg">
-    <div class="form-title">REGISTER PATIENT</div>
+    <div class="form-title">PAYMENTS</div>
     {{ Form::open(array('url'=>'payment', 'class'=>'form-horizontal','role'=>'form')) }}
 
     <!-- Complain-->
     <div class="form-group">
-        {{ Form::label('sponser_id', 'sponser_id', array('class' => 'col-sm-2 control-label')) }}
+        {{ Form::label('sponser_id', 'Sponser Name', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('sponser_id', null, array('class' => 'form-control', 'placeholder'=>'Patient Name')) }}
+            {{ Form::text('sponser_id', null, array('class' => 'form-control', 'placeholder'=>'Sponser Name')) }}
         </div>
     </div>
 
     <!-- Observation-->
     <div class="form-group">
-        {{ Form::label('bill_type', 'Obill_type', array('class' => 'col-sm-2 control-label')) }}
+        {{ Form::label('bill_type', 'Bill Type', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('bill_type', null, array('class' => 'form-control', 'placeholder'=>'Date of Birth')) }}
+            {{ Form::text('bill_type', null, array('class' => 'form-control', 'placeholder'=>'Bill Type')) }}
         </div>
     </div>
 
     <!-- Comment-->
     <div class="form-group">
-        {{ Form::label('transaction_status', 'transaction_status', array('class' => 'col-sm-2 control-label')) }}
+        {{ Form::label('transaction_status', 'Transaction Status', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('transaction_status', null, array('class' => 'form-control', 'placeholder'=>'Gender')) }}
+            {{ Form::text('transaction_status', null, array('class' => 'form-control', 'placeholder'=>'Transaction Status')) }}
         </div>
     </div>
 

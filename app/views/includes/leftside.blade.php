@@ -4,10 +4,11 @@
 <!--Feature menu-->
 <div class="menu-left">
 <ul class="nav nav-pills nav-stacked">
-    <li class="nav-header"><div data-toggle="collapse" data-target="#feature">
-            <p>Asset Feature <i class="glyphicon glyphicon-chevron-right"></i></p>
+    <li class="nav-header"><div data-toggle="collapse" data-target="#form">
+          <p>Forms <i class="glyphicon glyphicon-chevron-down"></i></p>
         </div>
-        <ul class="nav nav-pills nav-stacked collapse in" id="feature">
+        <ul class="nav nav-pills nav-stacked collapse in" id="form">
+
             <li><a href="{{ URL::asset('patient/create') }}"><span class="glyphicon glyphicon-th-large"></span> Patient </a></li>
             <li ><a href="{{ URL::asset('consultation/create') }}"><i class="glyphicon glyphicon-th-large"></i> Consaltation </a></li>
             <li><a href="{{ URL::asset('payment/create') }}"><i class="glyphicon glyphicon-th-large"></i> Payment </a></li>
@@ -16,10 +17,10 @@
 </ul>
 <!--Forms menu-->
 <ul class="nav nav-pills nav-stacked">
-    <li class="nav-header"><div data-toggle="collapse" data-target="#form">
-          <p>Forms <i class="glyphicon glyphicon-chevron-down"></i></p>
+    <li class="nav-header"><div data-toggle="collapse" data-target="#feature">
+            <p>Asset Feature <i class="glyphicon glyphicon-chevron-right"></i></p>
         </div>
-        <ul class="nav nav-pills nav-stacked collapse out" id="form">
+        <ul class="nav nav-pills nav-stacked collapse in" id="feature">
 
             <li><a href="{{ URL::asset('forms/stations') }}"><i class="glyphicon glyphicon-th-large"></i> Station </a></li>
             <li><a href="{{ URL::asset('forms/departments') }}"><i class="glyphicon glyphicon-th-large"></i> Departments </a></li>

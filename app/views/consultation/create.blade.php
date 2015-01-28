@@ -9,14 +9,14 @@
     @endforeach
 </ul>
 <div class="form-bg">
-    <div class="form-title">REGISTER PATIENT</div>
+    <div class="form-title">PATIENT CONSULTATION</div>
     {{ Form::open(array('url'=>'consultation', 'class'=>'form-horizontal','role'=>'form')) }}
 
     <!-- Complain-->
     <div class="form-group">
         {{ Form::label('complain', 'Complain', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('complain', null, array('class' => 'form-control', 'placeholder'=>'Patient Name')) }}
+            {{ Form::text('complain', null, array('class' => 'form-control', 'placeholder'=>'Complain')) }}
         </div>
     </div>
 
@@ -24,7 +24,7 @@
     <div class="form-group">
         {{ Form::label('observation', 'Observation', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('observation', null, array('class' => 'form-control', 'placeholder'=>'Date of Birth')) }}
+            {{ Form::text('observation', null, array('class' => 'form-control', 'placeholder'=>'Observation')) }}
         </div>
     </div>
 
@@ -32,7 +32,7 @@
     <div class="form-group">
         {{ Form::label('comment', 'comment', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('comment', null, array('class' => 'form-control', 'placeholder'=>'Gender')) }}
+            {{ Form::text('comment', null, array('class' => 'form-control', 'placeholder'=>'comment')) }}
         </div>
     </div>
 
@@ -40,7 +40,7 @@
     <div class="form-group">
         {{ Form::label('lab', 'lab', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('lab', null, array('class' => 'form-control', 'placeholder'=>'Region')) }}
+            {{ Form::text('lab', null, array('class' => 'form-control', 'placeholder'=>'lab')) }}
         </div>
     </div>
 
@@ -48,7 +48,7 @@
     <div class="form-group">
         {{ Form::label('process', 'process', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('process', null, array('class' => 'form-control', 'placeholder'=>'District')) }}
+            {{ Form::text('process', null, array('class' => 'form-control', 'placeholder'=>'process')) }}
         </div>
     </div>
 
@@ -56,7 +56,7 @@
     <div class="form-group">
         {{ Form::label('signoff', 'signoff', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('signoff', null, array('class' => 'form-control', 'placeholder'=>'Member Number')) }}
+            {{ Form::text('signoff', null, array('class' => 'form-control', 'placeholder'=>'signoff')) }}
         </div>
     </div>
 
