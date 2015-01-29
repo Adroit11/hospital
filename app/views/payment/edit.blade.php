@@ -1,6 +1,5 @@
 @extends('layouts.form')
 @section('content')
-<!-- if there are creation errors, they will show here -->
 @include('includes.message')
 
 <ul>
@@ -9,8 +8,8 @@
     @endforeach
 </ul>
 <div class="form-bg">
-    <div class="form-title">PAYMENTS</div>
-    {{ Form::open(array('url'=>'payment', 'class'=>'form-horizontal','role'=>'form')) }}
+    <div class="form-title">PAYMENTS FOR <br>{{$payment->name}}</div>
+    {{ Form::model($payment, array('route' => array('payment.update', $payment->id), 'method' => 'PUT','class'=>'form-horizontal')) }}
 
     <!-- Complain-->
     <div class="form-group">
@@ -40,7 +39,7 @@
     <div class="form-group">
         {{ Form::label('con_id', 'con_id', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('con_id', null, array('class' => 'form-control', 'placeholder'=>'Region')) }}
+            {{ Form::text('con_id', null, array('class' => 'form-control', 'placeholder'=>'Consultation')) }}
         </div>
     </div>
 
