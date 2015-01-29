@@ -23,39 +23,57 @@
     <!-- dob-->
     <div class="form-group">
         {{ Form::label('dob', 'DOB', array('class' => 'col-sm-2 control-label')) }}
-        <div class="col-sm-10">
-            {{ Form::text('dob', null, array('class' => 'form-control', 'placeholder'=>'Date of Birth')) }}
+        <div class="col-sm-4">
+            <input type="date" name="dob" class="form-control">
+        </div>
+
+     <!-- Gender-->
+        {{ Form::label('gender', 'Gender', array('class' => 'col-sm-2 control-label')) }}
+        <div class="col-sm-4">
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default">
+                    <input type="radio" name="gender" value="MALE"> MALE
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="gender" value="FEMALE"> FEMALE
+                </label>
+            </div>
         </div>
     </div>
 
-    <!-- Gender-->
+    <!-- tel-->
     <div class="form-group">
-        {{ Form::label('gender', 'Gender', array('class' => 'col-sm-2 control-label')) }}
-        <div class="col-sm-10">
-            {{ Form::text('gender', null, array('class' => 'form-control', 'placeholder'=>'Gender')) }}
+        {{ Form::label('tel', 'Tel', array('class' => 'col-sm-2 control-label')) }}
+        <div class="col-sm-4">
+            {{ Form::text('tel', null, array('class' => 'form-control', 'placeholder'=>'Telephone Number')) }}
+        </div>
+
+        <!-- email-->
+        {{ Form::label('email', 'e-mail', array('class' => 'col-sm-2 control-label')) }}
+        <div class="col-sm-4">
+            {{ Form::text('email', null, array('class' => 'form-control', 'placeholder'=>'email')) }}
         </div>
     </div>
+
 
     <!-- region-->
     <div class="form-group">
         {{ Form::label('region', 'Region', array('class' => 'col-sm-2 control-label')) }}
-        <div class="col-sm-10">
+        <div class="col-sm-4">
             {{ Form::text('region', null, array('class' => 'form-control', 'placeholder'=>'Region')) }}
         </div>
-    </div>
 
-    <!-- district-->
-    <div class="form-group">
+     <!-- district-->
         {{ Form::label('district', 'District', array('class' => 'col-sm-2 control-label')) }}
-        <div class="col-sm-10">
+        <div class="col-sm-4">
             {{ Form::text('district', null, array('class' => 'form-control', 'placeholder'=>'District')) }}
         </div>
     </div>
 
-    <!-- ward-->
     <div class="form-group">
+     <!-- ward-->
         {{ Form::label('ward', 'Ward', array('class' => 'col-sm-2 control-label')) }}
-        <div class="col-sm-10">
+        <div class="col-sm-5">
             {{ Form::text('ward', null, array('class' => 'form-control', 'placeholder'=>'Ward')) }}
         </div>
     </div>
@@ -63,39 +81,23 @@
     <!-- sponser-->
     <div class="form-group">
         {{ Form::label('sponser', 'Sponser', array('class' => 'col-sm-2 control-label')) }}
-        <div class="col-sm-10">
+        <div class="col-sm-4">
             {{ Form::text('sponser', null, array('class' => 'form-control', 'placeholder'=>'sponser')) }}
         </div>
-    </div>
 
-    <!-- memberNo-->
-    <div class="form-group">
+
+      <!-- memberNo-->
         {{ Form::label('memberNo', 'Member No.', array('class' => 'col-sm-2 control-label')) }}
-        <div class="col-sm-10">
+        <div class="col-sm-4">
             {{ Form::text('memberNo', null, array('class' => 'form-control', 'placeholder'=>'Member Number')) }}
         </div>
     </div>
 
-    <!-- tel-->
-    <div class="form-group">
-        {{ Form::label('tel', 'Tel', array('class' => 'col-sm-2 control-label')) }}
-        <div class="col-sm-10">
-            {{ Form::text('tel', null, array('class' => 'form-control', 'placeholder'=>'Telephone Number')) }}
-        </div>
-    </div>
-
-    <!-- email-->
-    <div class="form-group">
-        {{ Form::label('email', 'e-mail', array('class' => 'col-sm-2 control-label')) }}
-        <div class="col-sm-10">
-            {{ Form::text('email', null, array('class' => 'form-control', 'placeholder'=>'email')) }}
-        </div>
-    </div>
 
     <!-- job-->
     <div class="form-group">
         {{ Form::label('occupation', 'Occupation', array('class' => 'col-sm-2 control-label')) }}
-        <div class="col-sm-10">
+        <div class="col-sm-5">
             {{ Form::text('occupation', null, array('class' => 'form-control', 'placeholder'=>'Occupation')) }}
         </div>
     </div>
@@ -103,16 +105,15 @@
     <!-- emergency-->
     <div class="form-group">
         {{ Form::label('emerg_tel', 'Emergency Tel', array('class' => 'col-sm-2 control-label')) }}
-        <div class="col-sm-10">
+        <div class="col-sm-4">
             {{ Form::text('emerg_tel', null, array('class' => 'form-control', 'placeholder'=>'Emergency Contacts')) }}
         </div>
-    </div>
+
 
     <!-- dob-->
-    <div class="form-group">
         {{ Form::label('emerg_name', 'Emergency Name', array('class' => 'col-sm-2 control-label')) }}
-        <div class="col-sm-10">
-            {{ Form::text('emerg_name', null, array('class' => 'form-control', 'placeholder'=>'Date of Birth')) }}
+        <div class="col-sm-4">
+            {{ Form::text('emerg_name', null, array('class' => 'form-control', 'placeholder'=>'Emergence contact name')) }}
         </div>
     </div>
 

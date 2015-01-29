@@ -38,9 +38,17 @@
     <div class="form-group">
         {{ Form::label('title', 'Title', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            Mr. {{ Form::radio('title', 'Mr. ', true, array('class'=>'radio-inline'));}}
-              Mrs. {{ Form::radio('title', 'Mrs. ', false, array('class'=>'radio-inline'));}}
-              Miss. {{ Form::radio('title', 'Miss. ', false, array('class'=>'radio-inline'));}}
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default">
+                    <input type="radio" name="title" value="Mr. " checked=""> Mr
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="title" value="Mrs. "> Mrs
+                </label>
+                <label class="btn btn-default active">
+                    <input type="radio" name="title" value="Miss. " > Miss
+                </label>
+            </div>
         </div>
     </div>
 
