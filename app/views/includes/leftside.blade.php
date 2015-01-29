@@ -20,7 +20,7 @@
     </li>
 </ul>
 <!--Forms menu-->
-<ul class="nav nav-pills nav-stacked">
+<!--<ul class="nav nav-pills nav-stacked">
     <li class="nav-header"><div data-toggle="collapse" data-target="#feature">
             <p>Asset Feature <i class="glyphicon glyphicon-chevron-right"></i></p>
         </div>
@@ -33,4 +33,5 @@
         </ul>
     </li>
 </ul>
+-->
 </div>

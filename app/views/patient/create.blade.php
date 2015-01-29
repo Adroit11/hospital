@@ -9,7 +9,7 @@
     @endforeach
 </ul>
 <div class="form-bg">
-    <div class="form-title">REGISTER PATIENT</div>
+    <div class="form-title">PATIENT REGISTRATION FORM</div>
 {{ Form::open(array('url'=>'payment', 'class'=>'form-horizontal','role'=>'form')) }}
 
     <!-- Patient name-->

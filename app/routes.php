@@ -13,8 +13,16 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+    //return View::make('hello');
+    return View::make('dashboard');
 });
+
+Route::get('dashboard', function(){
+    return View::make('dashboard');
+});
+
+
+Route::resource ('user','UserController');
 
 Route::resource ('patient','PatientController');
 

@@ -17,7 +17,7 @@
         <div class="col-md-8">
             <!-- column 2 -->
             <div class ="print-hide dash-title">
-                    TPA  OFFICE FURNITURE AND EQUIPMENTS </br> INVENTORY SYSTEM
+                    HOSPITAL MANAGEMENT SYSTEM
                 </div>
             <hr>
             @yield('content')

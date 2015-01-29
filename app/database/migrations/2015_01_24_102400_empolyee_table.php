@@ -18,6 +18,9 @@ class EmpolyeeTable extends Migration {
             $table->string('name');
             $table->integer('type');
             $table->string('number');
+            $table->string('password');
+            $table->integer('level');
+            $table->boolean('activated')->default(1);
             $table->string('title','25');
 			$table->timestamps();
 		});
