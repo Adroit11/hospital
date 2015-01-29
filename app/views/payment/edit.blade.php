@@ -23,7 +23,8 @@
     <div class="form-group">
         {{ Form::label('bill_type', 'Bill Type', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('bill_type', null, array('class' => 'form-control', 'placeholder'=>'Bill Type')) }}
+            {{ Form::select('bill_type', array('' => 'Select payment type', 'CASH' => 'CASH', 'SPONSOR' => 'CHEQUE', '3' => 'CHEQUE'),null, array('class' => 'form-control')) }}
+
         </div>
     </div>
 
