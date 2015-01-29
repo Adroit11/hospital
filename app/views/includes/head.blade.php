@@ -15,5 +15,6 @@
     <link href="{{ URL::asset('css/print.css') }}" rel="stylesheet" media="print">
 
     <script src="{{ URL::asset('js/jquery-1.11.1.js') }}"></script>
+    <script src="{{ URL::asset('js/scripts.js') }}"></script>
 </head>
 <!--    end of head    -->

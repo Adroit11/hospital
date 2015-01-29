@@ -11,7 +11,7 @@ $(document).ready(function(){
 
     //delete button confirmation function
     $("button.btn-danger").click(function(){
-        if(confirm("Do you really want to delete Name?"))
+        if(confirm("Do you really want to delete this?"))
             this.form.submit();
         else
             return false;
