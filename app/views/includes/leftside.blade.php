@@ -12,6 +12,7 @@
             <li><a href="{{ URL::asset('patient/create') }}"><span class="glyphicon glyphicon-th-large"></span> Patient </a></li>
             <li ><a href="{{ URL::asset('consultation/create') }}"><i class="glyphicon glyphicon-th-large"></i> Consaltation </a></li>
             <li><a href="{{ URL::asset('payment/create') }}"><i class="glyphicon glyphicon-th-large"></i> Payment </a></li>
+            <li><a href="{{ URL::asset('item/create') }}"><i class="glyphicon glyphicon-th-large"></i> Item </a></li>
         </ul>
     </li>
 </ul>

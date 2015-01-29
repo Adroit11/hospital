@@ -22,3 +22,5 @@ Route::resource ('consultation','ConsultationController');
 
 Route::resource ('payment','PaymentController');
 
+Route::resource ('item','ItemController');
+
