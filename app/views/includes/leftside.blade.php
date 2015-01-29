@@ -13,6 +13,9 @@
             <li ><a href="{{ URL::asset('consultation/create') }}"><i class="glyphicon glyphicon-th-large"></i> Consaltation </a></li>
             <li><a href="{{ URL::asset('payment/create') }}"><i class="glyphicon glyphicon-th-large"></i> Payment </a></li>
             <li><a href="{{ URL::asset('item/create') }}"><i class="glyphicon glyphicon-th-large"></i> Item </a></li>
+            <li><a href="{{ URL::asset('result/create') }}"><i class="glyphicon glyphicon-th-large"></i> Result </a></li>
+            <li><a href="{{ URL::asset('paymentlist/create') }}"><i class="glyphicon glyphicon-th-large"></i> Payment list </a></li>
+            <li><a href="{{ URL::asset('sponser/create') }}"><i class="glyphicon glyphicon-th-large"></i> Sponser </a></li>
         </ul>
     </li>
 </ul>

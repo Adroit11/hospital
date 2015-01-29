@@ -24,3 +24,8 @@ Route::resource ('payment','PaymentController');
 
 Route::resource ('item','ItemController');
 
+Route::resource ('result','ResultController');
+
+Route::resource ('paymentlist','PaymentListController');
+
+Route::resource ('sponser','SponserController');

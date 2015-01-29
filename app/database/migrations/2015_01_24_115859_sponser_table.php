@@ -16,6 +16,9 @@ class SponserTable extends Migration {
 		{
 			$table->increments('id');
             $table->string('name');
+            $table->string('code');
+            $table->string('tel');
+            $table->string('address');
 			$table->timestamps();
 		});
 	}
