@@ -22,6 +22,7 @@ class EmpolyeeTable extends Migration {
             $table->integer('level');
             $table->boolean('activated')->default(1);
             $table->string('title','25');
+            $table->rememberToken();
 			$table->timestamps();
 		});
 	}
