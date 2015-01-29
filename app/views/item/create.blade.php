@@ -14,57 +14,57 @@
 
     <!-- Complain-->
     <div class="form-group">
-        {{ Form::label('type', 'Item Type', array('class' => 'col-sm-2 control-label')) }}
+        {{ Form::label('type', 'type', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('type', null, array('class' => 'form-control', 'placeholder'=>'Item Type')) }}
+            {{ Form::text('type', null, array('class' => 'form-control', 'placeholder'=>'Sponser Name')) }}
         </div>
     </div>
 
     <!-- code-->
     <div class="form-group">
-        {{ Form::label('code', 'Item Code', array('class' => 'col-sm-2 control-label')) }}
+        {{ Form::label('code', 'code', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('code', null, array('class' => 'form-control', 'placeholder'=>'Code')) }}
+            {{ Form::text('code', null, array('class' => 'form-control', 'placeholder'=>'Bill Type')) }}
         </div>
     </div>
 
     <!-- Comment-->
     <div class="form-group">
-        {{ Form::label('unit', 'Unit', array('class' => 'col-sm-2 control-label')) }}
+        {{ Form::label('unit', 'unit', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('unit', null, array('class' => 'form-control', 'placeholder'=>'Item Unit')) }}
+            {{ Form::text('unit', null, array('class' => 'form-control', 'placeholder'=>'Transaction Status')) }}
         </div>
     </div>
 
     <!-- lab-->
     <div class="form-group">
-        {{ Form::label('name', 'Item Name', array('class' => 'col-sm-2 control-label')) }}
+        {{ Form::label('name', 'name', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('name', null, array('class' => 'form-control', 'placeholder'=>'Item Name')) }}
+            {{ Form::text('name', null, array('class' => 'form-control', 'placeholder'=>'Region')) }}
         </div>
     </div>
 
     <!-- code-->
     <div class="form-group">
-        {{ Form::label('price', 'Price', array('class' => 'col-sm-2 control-label')) }}
+        {{ Form::label('price', 'price', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('price', null, array('class' => 'form-control', 'placeholder'=>'Price')) }}
+            {{ Form::text('price', null, array('class' => 'form-control', 'placeholder'=>'Bill Type')) }}
         </div>
     </div>
 
     <!-- Comment-->
     <div class="form-group">
-        {{ Form::label('status', 'Status', array('class' => 'col-sm-2 control-label')) }}
+        {{ Form::label('status', 'status', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('status', null, array('class' => 'form-control', 'placeholder'=>'Status')) }}
+            {{ Form::text('status', null, array('class' => 'form-control', 'placeholder'=>'Transaction Status')) }}
         </div>
     </div>
 
     <!-- lab-->
     <div class="form-group">
-        {{ Form::label('con_type', 'Constration', array('class' => 'col-sm-2 control-label')) }}
+        {{ Form::label('con_type', 'con_type', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('con_type', null, array('class' => 'form-control', 'placeholder'=>'Constration')) }}
+            {{ Form::text('con_type', null, array('class' => 'form-control', 'placeholder'=>'Region')) }}
         </div>
     </div>
 
