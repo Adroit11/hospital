@@ -2,7 +2,7 @@
 @section('content')
 
 <p class="index-title">
-    Users
+    Employee List
     <a class="btn btn-lg btn-success pull-right" href="{{ URL::to('user/create') }}"><i class="glyphicon glyphicon-plus"></i> ADD NEW USER </a>
 </p>
 

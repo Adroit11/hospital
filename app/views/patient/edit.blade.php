@@ -10,7 +10,7 @@
 </ul>
 <div class="form-bg">
     <div class="form-title">PATIENT REGISTRATION FORM</div>
-{{ Form::open(array('url'=>'patient', 'class'=>'form-horizontal','role'=>'form')) }}
+    {{ Form::model($patient, array('route' => array('patient.update', $patient->id), 'method' => 'PUT','class'=>'form-horizontal')) }}
 
     <!-- Patient name-->
     <div class="form-group">
@@ -27,7 +27,7 @@
             <input type="date" name="dob" class="form-control">
         </div>
 
-     <!-- Gender-->
+        <!-- Gender-->
         {{ Form::label('gender', 'Gender', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-4">
             <div class="btn-group" data-toggle="buttons">
@@ -63,7 +63,7 @@
             {{ Form::text('region', null, array('class' => 'form-control', 'placeholder'=>'Region')) }}
         </div>
 
-     <!-- district-->
+        <!-- district-->
         {{ Form::label('district', 'District', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-4">
             {{ Form::text('district', null, array('class' => 'form-control', 'placeholder'=>'District')) }}
@@ -71,7 +71,7 @@
     </div>
 
     <div class="form-group">
-     <!-- ward-->
+        <!-- ward-->
         {{ Form::label('ward', 'Ward', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-5">
             {{ Form::text('ward', null, array('class' => 'form-control', 'placeholder'=>'Ward')) }}
@@ -86,7 +86,7 @@
         </div>
 
 
-      <!-- memberNo-->
+        <!-- memberNo-->
         {{ Form::label('memberNo', 'Member No.', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-4">
             {{ Form::text('memberNo', null, array('class' => 'form-control', 'placeholder'=>'Member Number')) }}
@@ -110,7 +110,7 @@
         </div>
 
 
-    <!-- dob-->
+        <!-- dob-->
         {{ Form::label('emerg_name', 'Emergency Name', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-4">
             {{ Form::text('emerg_name', null, array('class' => 'form-control', 'placeholder'=>'Emergence contact name')) }}
@@ -124,7 +124,7 @@
             <a class="btn btn-warning" href="{{ URL::to('patient') }}">Cancel</a>
         </div>
     </div>
-{{ Form::close() }}
+    {{ Form::close() }}
 </div>
 
 @stop
