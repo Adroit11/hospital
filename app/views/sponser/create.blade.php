@@ -9,12 +9,12 @@
     @endforeach
 </ul>
 <div class="form-bg">
-    <div class="form-title">Result</div>
+    <div class="form-title">Add Sponsor</div>
     {{ Form::open(array('url'=>'sponser', 'class'=>'form-horizontal','role'=>'form')) }}
 
     <!-- name-->
     <div class="form-group">
-        {{ Form::label('name', 'name', array('class' => 'col-sm-2 control-label')) }}
+        {{ Form::label('name', 'Title', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
             {{ Form::text('name', null, array('class' => 'form-control', 'placeholder'=>'Sponser Name')) }}
         </div>
@@ -22,25 +22,25 @@
 
     <!-- results-->
     <div class="form-group">
-        {{ Form::label('code', 'code', array('class' => 'col-sm-2 control-label')) }}
+        {{ Form::label('code', 'Code', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('code', null, array('class' => 'form-control', 'placeholder'=>'Bill Type')) }}
+            {{ Form::text('code', null, array('class' => 'form-control', 'placeholder'=>'code')) }}
         </div>
     </div>
 
     <!-- name-->
     <div class="form-group">
-        {{ Form::label('tel', 'tel', array('class' => 'col-sm-2 control-label')) }}
+        {{ Form::label('tel', 'Tel', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('tel', null, array('class' => 'form-control', 'placeholder'=>'Sponser Name')) }}
+            {{ Form::text('tel', null, array('class' => 'form-control', 'placeholder'=>'Tel')) }}
         </div>
     </div>
 
     <!-- address-->
     <div class="form-group">
-        {{ Form::label('address', 'address', array('class' => 'col-sm-2 control-label')) }}
+        {{ Form::label('address', 'Address', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('address', null, array('class' => 'form-control', 'placeholder'=>'Bill Type')) }}
+            {{ Form::text('address', null, array('class' => 'form-control', 'placeholder'=>'Address')) }}
         </div>
     </div>
 

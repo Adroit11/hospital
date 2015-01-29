@@ -15,5 +15,15 @@ class Patient extends Eloquent {
         'gender'=>'required'
     );
 
+    public function user(){
+        return $this->belongsTo('User');
+    }
+
+    public function sponser(){
+        return $this->belongsTo('Sponser');
+    }
+
+
+
 }
 

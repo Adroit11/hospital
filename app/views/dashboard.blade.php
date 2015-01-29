@@ -27,7 +27,7 @@
         </div>
 
         <div class="col-md-3">
-            <a href="{{ URL::asset('payment/create') }}">
+            <a href="{{ URL::asset('payment') }}">
                 <div class="panel panel-primary dash-panel">
                     <div class="panel-heading">PAYMENT</div>
                     <div class="panel-body">

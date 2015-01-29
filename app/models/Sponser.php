@@ -15,4 +15,8 @@ class Sponser extends Eloquent {
         'code'=>'required'
     );
 
+    public function asset (){
+        return $this->hasMany('Patient');
+    }
+
 } 

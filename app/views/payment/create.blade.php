@@ -9,7 +9,7 @@
     @endforeach
 </ul>
 <div class="form-bg">
-    <div class="form-title">PAYMENTS</div>
+    <div class="form-title">PAYMENTS FOR <br>{{$payment}}</div>
     {{ Form::open(array('url'=>'payment', 'class'=>'form-horizontal','role'=>'form')) }}
 
     <!-- Complain-->

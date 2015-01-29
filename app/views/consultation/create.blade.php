@@ -30,7 +30,7 @@
 
     <!-- Comment-->
     <div class="form-group">
-        {{ Form::label('comment', 'comment', array('class' => 'col-sm-2 control-label')) }}
+        {{ Form::label('comment', 'Comment', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
             {{ Form::text('comment', null, array('class' => 'form-control', 'placeholder'=>'comment')) }}
         </div>
@@ -38,7 +38,7 @@
 
     <!-- lab-->
     <div class="form-group">
-        {{ Form::label('lab', 'lab', array('class' => 'col-sm-2 control-label')) }}
+        {{ Form::label('lab', 'Lab', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
             {{ Form::text('lab', null, array('class' => 'form-control', 'placeholder'=>'lab')) }}
         </div>
@@ -46,7 +46,7 @@
 
     <!-- process-->
     <div class="form-group">
-        {{ Form::label('process', 'process', array('class' => 'col-sm-2 control-label')) }}
+        {{ Form::label('process', 'Process', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
             {{ Form::text('process', null, array('class' => 'form-control', 'placeholder'=>'process')) }}
         </div>
@@ -54,7 +54,7 @@
 
     <!-- signoff-->
     <div class="form-group">
-        {{ Form::label('signoff', 'signoff', array('class' => 'col-sm-2 control-label')) }}
+        {{ Form::label('signoff', 'Signoff', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
             {{ Form::text('signoff', null, array('class' => 'form-control', 'placeholder'=>'signoff')) }}
         </div>

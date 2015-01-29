@@ -28,4 +28,8 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
         'level'=>'required|numeric'
     );
 
+    public function patient (){
+        return $this->hasMany('User');
+    }
+
 }

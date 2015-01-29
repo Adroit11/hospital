@@ -20,7 +20,10 @@ class PatientController extends BaseController{
 
     public function create()
     {
-        return View::make('patient.create');
+        $sponsor = array('' => 'Select Sponsor') + Sponser::lists('name','id');
+
+        return View::make('patient.create')
+            ->with('sponsor',$sponsor);
     }
 
     public function store()
