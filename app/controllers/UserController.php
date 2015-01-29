@@ -58,7 +58,7 @@ class UserController extends BaseController {
 
             // redirect
             Session::flash('message', 'Successfully created User');
-            return Redirect::to('user/create');
+            return Redirect::to('user');
         }
     }
 
@@ -109,14 +109,17 @@ class UserController extends BaseController {
         } else {
             // store
             $user = User::find($id);
-            $user->name   = Input::get('name');
-            $user->password   = Hash::make(Input::get('password'));
-            $user->level  = Input::get('level');
+            $user->name = Input::get('name');
+            $user->type = Input::get('type');;
+            $user->number = Input::get('number');
+            $user->title = Input::get('title');
+            $user->password = Hash::make(Input::get('password'));
+            $user->level = Input::get('level');
             $user->save();
 
             // redirect
             Session::flash('message', 'Successfully updated user!');
-            return Redirect::to('users');
+            return Redirect::to('user');
         }
     }
 
@@ -135,7 +138,7 @@ class UserController extends BaseController {
 
         // redirect
         Session::flash('message', 'Successfully deleted the User!');
-        return Redirect::to('users');
+        return Redirect::to('user');
     }
 
 

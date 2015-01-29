@@ -20,7 +20,7 @@
 
     <!-- Number input-->
     <div class="form-group">
-        {{ Form::label('number', 'number', array('class' => 'col-sm-2 control-label')) }}
+        {{ Form::label('number', 'Emp.No', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
             {{ Form::text('number', null, array('class' => 'form-control', 'placeholder'=>'Employee Number')) }}
         </div>
@@ -71,7 +71,7 @@
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
             <button type="submit"  class="btn btn-success">Save</button>
-            <a class="btn btn-warning" href="{{ URL::to('users') }}">Cancel</a>
+            <a class="btn btn-warning" href="{{ URL::to('user') }}">Cancel</a>
         </div>
     </div>
 

@@ -16,8 +16,8 @@
         <td class="col-md-3">Name</td>
         <td class="col-md-3">Number</td>
         <td class="col-md-1">Level</td>
-        <td class="col-md-1">Active</td>
-        <td class="col-md-3">Action</td>
+        <td class="col-md-2">Role</td>
+        <td class="col-md-2">Action</td>
     </tr>
     </thead>
     <tbody>
@@ -27,12 +27,12 @@
         <td>{{ $value->title.$value->name }}</td>
         <td>{{ $value->number }}</td>
         <td>{{ $value->level }}</td>
-        <td>{{ $value->activated }}</td>
+        <td>{{ $value->type }}</td>
         <!-- we will also add show, edit, and delete buttons -->
         <td>
             <a class="btn btn-xs btn-info" href="{{ URL::to('user/' . $value->id . '/edit') }}">Edit</a>
 
-            {{ Form::open(array('url' => 'users/' . $value->id, 'class' => 'pull-right')) }}
+            {{ Form::open(array('url' => 'user/' . $value->id, 'class' => 'pull-right')) }}
             {{ Form::hidden('_method', 'DELETE') }}
             {{ Form::submit('Delete', array('class' => 'btn btn-xs btn-danger')) }}
             {{ Form::close() }}
