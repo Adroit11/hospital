@@ -16,13 +16,7 @@
         </div>
             <div class="col-md-8">
                <!-- column 2 -->
-                <div class ="print-hide">
-                    <a class="btn btn-lg btn-info" href="{{ URL::asset('dashboard') }}"><strong>
-                            <i class="glyphicon glyphicon-th-large"></i> My Dashboard</strong></a>
-                   <a class="btn btn-lg btn-info" href="javascript:window.history.back()">
-                      <i class="glyphicon glyphicon-arrow-left"></i>  Go Back </a>
-                </div>
-                <hr>
+
 
                    @yield('content')
             </div>

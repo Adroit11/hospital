@@ -66,7 +66,7 @@
         <div class="col-md-3">
             <a href="{{ URL::asset('result/create') }}">
                 <div class="panel panel-primary dash-panel">
-                    <div class="panel-heading">LAB RESULT</div>
+                    <div class="panel-heading">LAB</div>
                     <div class="panel-body">
                         {{ HTML::image('images/lab.png', null, array('class' => 'img-rounded img-responsive dash-img')) }}
                     </div>

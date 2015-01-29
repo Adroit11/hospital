@@ -1,5 +1,8 @@
 <!-- Left column -->
-<p><a href="{{ URL::asset('dashboard') }}"><strong><i class="glyphicon glyphicon-th-large"></i> My Dashboard</strong></a></p>
+<p><a href="{{ URL::asset('dashboard') }}"><strong><i class="glyphicon glyphicon-th-large"></i> My Dashboard</strong></a>
+
+<a  href="javascript:window.history.back()">
+                      <strong><i class="glyphicon glyphicon-arrow-left"></i> Back</strong> </a></p>
 <hr>
 <!--Feature menu-->
 <div class="menu-left">
