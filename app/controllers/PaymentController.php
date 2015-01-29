@@ -50,10 +50,10 @@ class PaymentController extends BaseController {
     {
         // get the asset
         $patient= Patient::find($id);
-        $payment = $patient;
+        $payment = $patient->name;
 
         // show the edit form and pass the asset
-        return View::make('payment.edit')
+        return View::make('payment.create')
             ->with('payment', $payment);
     }
 
@@ -67,27 +67,38 @@ class PaymentController extends BaseController {
     public function update($id)
     {
         // validate
-        $validator = Validator::make(Input::all(), Payment::$rules);
+        $validator = Validator::make(Input::all(), Patient::$rules);
 
         // process the login
         if ($validator->fails()) {
-            return Redirect::to('payment/' . $id . '/edit')
+            return Redirect::to('patient/' . $id . '/edit')
                 ->with('error', 'The following errors occurred')
                 ->withInput(Input::all())
                 ->withErrors($validator);
         } else {
             // store
-            $payment = new Payment;
-            $payment->reg_id = 1;
-            $payment->con_id = 1;
-            $payment->sponser_id = 2;
-            $payment->bill_type = Input::get('bill_type');
-            $payment->transaction_status = Input::get('transaction_status');
-            $payment->emp_id = 1;
-            $payment->save();
+            $patient = Patient::find($id) ;
+            $patient->name = Input::get('name');
+            $patient->dob = Input::get('dob');
+            $patient->gender = Input::get('gender');
+            $patient->region = Input::get('region');
+            $patient->district = Input::get('district');
+            $patient->district = Input::get('district');
+            $patient->ward = Input::get('ward');
+            $patient->sponser_id = 1;
+            $patient->member_no = Input::get('memberNo');
+            $patient->tel = Input::get('tel');
+            $patient->email = Input::get('email');
+            $patient->occupation = Input::get('occupation');
+            $patient->emerg_tel = Input::get('emerg_tel');
+            $patient->emerg_name = Input::get('emerg_name');
+
+            $patient->emp_id = 1;
+
+            $patient->save();
 
             // redirect
-            Session::flash('message', 'Successfully patient payment!');
+            Session::flash('message', 'Successfully updated patient!');
             return Redirect::to('patient');
         }
     }
