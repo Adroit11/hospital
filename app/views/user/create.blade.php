@@ -4,7 +4,7 @@
 @include('includes.message')
 
 <div class="form-bg">
-    <div class="form-title">Add New User</div>
+    <div class="form-title">Add New Employee</div>
 
 {{ HTML::ul($errors->all()) }}
 
@@ -18,6 +18,7 @@
         </div>
     </div>
 
+    <!-- Number input-->
     <div class="form-group">
         {{ Form::label('number', 'number', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
@@ -33,11 +34,13 @@
         </div>
     </div>
 
-    <!-- Name input-->
+    <!-- Title input-->
     <div class="form-group">
         {{ Form::label('title', 'Title', array('class' => 'col-sm-2 control-label')) }}
         <div class="col-sm-10">
-            {{ Form::text('title', null, array('class' => 'form-control', 'placeholder'=>'Employee Title')) }}
+            Mr. {{ Form::radio('title', 'Mr. ', true, array('class'=>'radio-inline'));}}
+              Mrs. {{ Form::radio('title', 'Mrs. ', false, array('class'=>'radio-inline'));}}
+              Miss. {{ Form::radio('title', 'Miss. ', false, array('class'=>'radio-inline'));}}
         </div>
     </div>
 

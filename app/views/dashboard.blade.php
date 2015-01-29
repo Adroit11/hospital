@@ -38,7 +38,7 @@
         </div>
 
         <div class="col-md-3">
-            <a href="{{ URL::asset('user/create') }}">
+            <a href="{{ URL::asset('user') }}">
                 <div class="panel panel-primary dash-panel">
                     <div class="panel-heading">USER MANAGER</div>
                     <div class="panel-body">

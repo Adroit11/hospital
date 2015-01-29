@@ -11,11 +11,11 @@ class UserController extends BaseController {
     public function index()
     {
         // get all the users
-        $user = User::all();
+        $users = User::all();
 
         // load the view and pass the users
         return View::make('user.index')
-            ->with('user', $user);
+            ->with('users', $users);
     }
 
 
@@ -71,7 +71,7 @@ class UserController extends BaseController {
      */
     public function show($id)
     {
-        return View::make('users');
+        return View::make('user');
     }
 
 
@@ -85,7 +85,7 @@ class UserController extends BaseController {
     {
         $user= User::find($id);
 
-        return View::make('users.edit')
+        return View::make('user.edit')
             ->with('user', $user);
     }
 
@@ -103,7 +103,7 @@ class UserController extends BaseController {
 
         // process the login
         if ($validator->fails()) {
-            return Redirect::to('users/' . $id . '/edit')
+            return Redirect::to('user/' . $id . '/edit')
                 ->with('error', 'The following errors occurred')
                 ->withErrors($validator);
         } else {
